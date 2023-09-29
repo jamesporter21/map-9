@@ -439,13 +439,13 @@ $("input[type='checkbox'][name='filter-by-third-type-input']").click(
           $("[data-zip-code='" + zipCode + "']").each(function (index) {
             $(this).attr("data-zip-code-visible", "true");
             if (
-              $(this).attr("data-zip-code-visible") === "true" &&
+              $(this).attr("id") === "TRUE" &&
               $(this).attr("data-first-type-visible") === "true"
             ) {
               $(this).css("display", "block");
             }
             if (
-              $(this).attr("data-zip-code-visible") === "false" &&
+              $(this).attr("ID") === "FALSE" &&
               $(this).attr("data-second-type-visible") === "true"
             ) {
               $(this).css("display", "block");
@@ -462,13 +462,13 @@ $("input[type='checkbox'][name='filter-by-third-type-input']").click(
         $("[data-zip-code='" + currentCountry + "']").each(function (index) {
           $(this).attr("data-zip-code-visible", "true");
           if (
-            $(this).attr("data-zip-code-visible") === "true" &&
+            $(this).attr("id") === "TRUE" &&
             $(this).attr("data-first-type-visible") === "true"
           ) {
             $(this).css("display", "block");
           }
           if (
-            $(this).attr("data-zip-code-visible") === "false" &&
+            $(this).attr("ID") === "FALSE" &&
             $(this).attr("data-second-type-visible") === "true"
           ) {
             $(this).css("display", "block");
